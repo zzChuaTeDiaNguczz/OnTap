@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cổng thông tin sinh viên</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header đầu trang -->
+    <header>
+      <h1>Cổng thông tin sinh viên</h1>
+      <p>MSSV: 2551010118 - Họ và tên: Trần Hoàng Anh Khoa</p>
+    </header>
+
+    <!-- Thân trang chia làm 3 cột -->
+    <main>
+      <!-- Cột 1: Menu bên trái -->
+      <nav>
+        <button onclick="hienThi('HTML')">HTML</button>
+        <button onclick="hienThi('CSS')">CSS</button>
+        <button onclick="hienThi('JS')">JavaScript</button>
+        <button onclick="hienThi('JQUERY')">JQuery</button>
+      </nav>
+
+      <!-- Cột 2: Nội dung tương ứng ở giữa -->
+      <section id="HTML" class="noidung">
+        <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px">
+          Giới thiệu về HTML
+        </h1>
+        <p>
+          <i><b class="dropcap">H</b>TML (Hypertext Markup Language) là ngôn ngữ đánh dấu siêu văn bản dùng để tạo cấu trúc trang web.</i>
+        </p>
+        <p>
+          <i><b class="dropcap">N</b>ội dung tập tin HTML chứa các thẻ (tag) trình bày hình thức và nội dung của trang.</i>
+        </p>
+      </section>
+
+      <section id="CSS" class="noidung">
+        <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px">
+          Giới thiệu về CSS
+        </h1>
+        <p>
+          <i><b class="dropcap">C</b>SS (Cascading Style Sheets) giúp định kiểu màu sắc, font chữ và bố cục giao diện cho trang web.</i>
+        </p>
+      </section>
+
+      <section id="JS" class="noidung">
+        <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px">
+          Giới thiệu về JavaScript
+        </h1>
+        <p>
+          <i><b class="dropcap">J</b>avaScript là ngôn ngữ kịch bản tạo ra các tương tác động linh hoạt cho người dùng trên web.</i>
+        </p>
+      </section>
+
+      <section id="JQUERY" class="noidung">
+        <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px">
+          Giới thiệu về JQuery
+        </h1>
+        <p>
+          <i><b class="dropcap">J</b>Query là thư viện JavaScript viết sẵn giúp đơn giản hóa việc xử lý sự kiện và hiệu ứng web.</i>
+        </p>
+      </section>
+
+      <!-- Cột 3: Công cụ mã hóa bên phải -->
+      <section id="maHoaSection" class="tinhtoan">
+        <h1 style="text-align: center; border-bottom: 1px solid #ccc; padding-bottom: 10px; width: 100%;">
+          Mã hóa chuỗi 2 chiều
+        </h1>
+
+        <p><b>Nhập chuỗi cần mã hóa:</b></p>
+        <textarea id="num1" class="text-box" placeholder="Nhập vào đây..."></textarea>
+        
+        <button onclick="maHoa()">Mã hóa (Xuống)</button>
+
+        <p style="margin-top: 15px;"><b>Chuỗi đã mã hóa:</b></p>
+        <textarea id="ketqua" class="text-box" placeholder="Nhập vào đây để giải mã..."></textarea>
+        
+        <button onclick="giaiMa()">Giải mã (Lên)</button>
+      </section>
+    </main>
+
+    <!-- Chân trang -->
+    <script src="./script.js"></script>
+  </body>
+</html>

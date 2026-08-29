@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  padding: 10px 20px;
+  background-color: cornflowerblue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 6px 12px lightcoral;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  min-height: 450px;
+}
+
+/* Sidebar Menu bên trái */
+nav {
+  border-bottom: 1px solid #ccc;
+  border-right: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  gap: 10px;
+  background-color: bisque;
+  padding: 30px 15px;
+}
+
+nav button {
+  width: 100%;
+  padding: 10px;
+  background-color: aqua;
+  cursor: pointer;
+  box-shadow: 0 4px 8px lightskyblue;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background-color: dodgerblue;
+  color: beige;
+  transform: translateX(20px) scale(1.03);
+  box-shadow: 0 8px 16px lightskyblue;
+}
+
+/* Cột giữa hiển thị nội dung */
+.noidung {
+  border-right: 2px solid #ccc;
+  display: none; /* JS sẽ kích hoạt hiện môn được chọn */
+  flex: 1;
+  padding: 20px;
+}
+
+.dropcap {
+  font-size: 28px;
+  float: left;
+  line-height: 1;
+  margin-right: 5px;
+  color: brown;
+}
+
+.noidung p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Cột bên phải chứa chức năng mã hóa */
+.tinhtoan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.text-box {
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  height: 70px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  font-family: monospace;
+}
+
+.tinhtoan button {
+  background-color: lightgreen;
+  color: black;
+  font-family: Arial, sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px lawngreen;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tinhtoan button:hover {
+  background-color: darkgreen;
+  color: white;
+  box-shadow: 0 5px 10px greenyellow;
+  transform: translateY(-5px) scale(1.03);
+}
